@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ejercicio 1</title>
+  <meta charset="UTF-8" />
+</head>
+
+<html>
+  <header>
+    <h1>Preguntas referencias sobre el protocolo HTTP</h1>
+  </header>
+
+  <hr />
+
+  <nav>
+    <h2>Sitios de interes</h2>
+    <ul>
+      <!-- prettier-ignore -->
+      <li><a href="https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto" target=”_blank”>Wikipedia</a></li>
+      <!-- prettier-ignore -->
+      <li><a href="https://aws.amazon.com/es/compare/the-difference-between-https-and-http/" target=”_blank”>Amazon</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <section>
+      <hr />
+      <h2>Seccion de preguntas sobre HTTP</h2>
+      <hr />
+
+      <ul>
+        <li>
+          <h3>Sobre que protocolo binario está montado el protocolo HTTP?</h3>
+        </li>
+        <p>
+          El protocolo HTTP esta montado sobre el protocolo de comunicaciones
+          TCP. TCP establece una conexion entre el cliente y el servidor
+          mediante un saludo de 3 vias (solicitud, aceptacion y confirmacion de
+          la conexion). Esta conexion se cierra de manera ordenada una vez que
+          finaliza la transmision de datos.
+        </p>
+        <li>
+          <h3>
+            Cuáles son los clientes HTTP y los servidores http mas utilizados ?
+          </h3>
+        </li>
+        <p>
+          Los clientes HTTP mas usados son los navegadores de las computadoras
+          que usamos habitualmente (Chrome, Mozilla). Mientras que los
+          servidores HTTP mas utilizados son Apache y Microsoft Internet
+          Information Services (IIS), entre otros.
+        </p>
+        <li><h3>Que verbos admite un comando en el requerimiento HTTP?</h3></li>
+        <p>
+          Cada comando de requerimiento HTTP lleva en su linea inicial un verbo
+          que le indica al servidor la naturaleza del mismo:
+        </p>
+        <ul>
+          <li>
+            GET: Se utiliza para solicitar datos de un recurso específico. El
+            servidor responde proporcionando los datos solicitados, si están
+            disponibles.
+          </li>
+          <li>
+            POST: Se utiliza para enviar datos al servidor para su
+            procesamiento. Este verbo es comúnmente utilizado cuando se envían
+            formularios en línea o se realizan operaciones que modifican datos
+            en el servidor.
+          </li>
+          <li>PUT: Se utiliza para crear recursos en el servidor.</li>
+          <li>DELETE: Se utiliza para eliminar un recurso en el servidor.</li>
+          <li>
+            PATCH: Se utiliza para realizar modificaciones parciales a un
+            recurso. Esto significa que solo se actualizan los campos
+            especificados en la solicitud, en lugar de reemplazar todo el
+            recurso.
+          </li>
+        </ul>
+        <li><h3>Que contenido lleva el body de un requerimiento HTTP?</h3></li>
+        <p>
+          El body de un requerimiento HTTP puede contener datos de cualquier
+          formato, por ejemplo, los datos de un formulario que esta enviando el
+          cliente al servidor
+        </p>
+        <li><h3>Que diferencia existe entre un URL y un URI?</h3></li>
+        <p>
+          Mientras que un URL especifica la ubicación precisa de un recurso en
+          la web, un URI puede ser más general y puede identificar cualquier
+          tipo de recurso en una red.
+        </p>
+        <li>
+          <h3>
+            Como se almacena información relacionada con las respuestas HTTP?
+          </h3>
+        </li>
+        <p>
+          La informacion de las respuestas HTTP se almacenan mediante cookies.
+          Las cookies son ampliamente utilizadas en la web para una variedad de
+          propósitos, como la autenticación de usuarios, el seguimiento de la
+          actividad del usuario, la personalización del contenido y la
+          publicidad dirigida.
+        </p>
+        <li><h3>Que significa Virtual hosting?</h3></li>
+        <p>
+          Se denomina Virtual Hosting a la práctica de alojar múltiples sitios
+          web en un mismo servidor físico. En lugar de asignar un servidor
+          dedicado a cada sitio web, se utilizan técnicas de configuración para
+          que un solo servidor pueda servir varios dominios de manera
+          simultánea.
+        </p>
+        <li><h3>Porque el HTTP se considera STATE LESS?</h3></li>
+        <p>
+          HTTP se considera "stateless" (sin estado) porque cada solicitud HTTP
+          que realiza un cliente al servidor es independiente y no guarda
+          ninguna información sobre las solicitudes anteriores. Esto significa
+          que el servidor no mantiene ningún conocimiento del estado anterior de
+          las interacciones con el cliente.
+        </p>
+        <li>
+          <h3>Como va a mejorar la velocidad de la WEB en poco tiempo?</h3>
+        </li>
+        <p>
+          La velocidad de la web mejora gracias a que el protocolo HTTP/2, a
+          diferencia de HTTP/1.1, trabaja con paquetes binarios y permite la
+          multiplexacion de solicitudes y respuestas en una misma conexion TCP.
+        </p>
+        <li>
+          <h3>
+            Como va a mejorar el comportamiento de una aplicación WEB en
+            ambientes ruidosos o de débil conexión?
+          </h3>
+        </li>
+        <p>
+          Las conexiones en ambientes de debil conexion se mejoraran gracias al
+          protocolo HTTP/3, que se basa en el protocolo QUIC (desarrollado por
+          Google), que utiliza UDP en lugar de TCP para el transporte de datos.
+          UDP es menos susceptible a problemas de congestión y pérdida de
+          paquetes en comparación con TCP, lo que puede mejorar el rendimiento
+          en entornos de red inestables.
+        </p>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Seccion de imagenes representativas del protocolo HTTP</h2>
+      <img src="./diagrama.png" style="width: 800px" />
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Seccion de videos representativos del protocolo HTTP</h2>
+      <video src="./video.mp4" type="video/mp4" controls></video>
+    </section>
+  </body>
+
+  <hr />
+
+  <footer>
+    <h1>Datos del alumno</h1>
+    <p>Juan Manuel Melgarejo Brabo. Leg: 28889</p>
+    <a href="">jmelgarejo889@alumnos.frh.utn.edu.ar</a>
+  </footer>
+</html>
