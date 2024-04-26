@@ -1,0 +1,42 @@
+body {
+  margin: 0%;
+}
+
+section {
+  width: 70%;
+  background-color: rgb(175, 175, 175);
+  margin: auto;
+}
+
+h1 {
+  margin: 0%;
+}
+
+.p-div-1 {
+  margin: 0%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.div1 {
+  width: 50%;
+  background-color: beige;
+  height: 12em;
+  border-radius: 1em;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 10px 5px 2px rgb(60, 58, 58);
+}
+
+.div2 {
+  width: 50%;
+  height: 12em;
+  border-radius: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  padding: 1em;
+  background: radial-gradient(#e2e664, #2e379b);
+}
