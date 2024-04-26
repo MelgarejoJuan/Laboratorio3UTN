@@ -48,10 +48,45 @@ h1 {
   margin: auto;
   margin-bottom: 1em;
   box-sizing: border-box;
-  padding: 1em;
   background: linear-gradient(#e2e664, #2e379b);
+  text-align: center;
 }
 
-/*.img-div3 {
+.img-div3 {
   height: 100%;
-}*/
+}
+
+.div4 {
+  width: 50%;
+  height: 12em;
+  border-radius: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, red, blue);
+  box-shadow: 10px 5px 2px rgb(60, 58, 58);
+}
+
+.p-div-4 {
+  margin: 0%;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.div5 {
+  width: 50%;
+  height: 12em;
+  border-radius: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 0%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, red, blue);
+}
+
+.p-div-5 {
+  margin: 0%;
+  text-align: left;
+  font-size: 1.1em;
+}
