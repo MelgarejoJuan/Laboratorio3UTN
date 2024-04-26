@@ -38,5 +38,20 @@ h1 {
   margin-bottom: 1em;
   box-sizing: border-box;
   padding: 1em;
-  background: radial-gradient(#e2e664, #2e379b);
+  background: radial-gradient(#f69d3c, #3f87a6);
 }
+
+.div3 {
+  width: 50%;
+  height: 12em;
+  border-radius: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  padding: 1em;
+  background: linear-gradient(#e2e664, #2e379b);
+}
+
+/*.img-div3 {
+  height: 100%;
+}*/
