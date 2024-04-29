@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  font-size: 1em;
+}
+
+.divs {
+  width: 15em;
+  height: 10em;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+  float: left;
+}
+
+.principal {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  background: linear-gradient(rgb(188, 91, 91), rgb(50, 50, 114));
+}
+
+.div1 {
+  background: linear-gradient(rgb(234, 172, 172), rgb(129, 129, 208));
+}
+
+.div2 {
+  background: linear-gradient(45deg, rgb(234, 172, 172), rgb(129, 129, 208));
+}
+
+.div3 {
+  background: linear-gradient(45deg, rgb(234, 172, 172), rgb(129, 129, 208));
+  text-align: center;
+}
+
+.div3 img {
+  max-height: 100%;
+}
+
+.div4 {
+  background: linear-gradient(45deg, rgb(234, 172, 172), rgb(129, 129, 208));
+  text-align: center;
+}
+
+.div4 img {
+  max-height: 100%;
+}
+
+.div5 {
+  background: linear-gradient(135deg, rgb(234, 172, 172), rgb(129, 129, 208));
+}
