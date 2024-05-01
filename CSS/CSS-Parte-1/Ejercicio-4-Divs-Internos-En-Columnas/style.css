@@ -1,0 +1,38 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.main-conteiner {
+  width: 80%;
+  background-color: beige;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articulos {
+  background-color: blueviolet;
+  margin: 1em;
+  padding: 1em;
+  width: 150px;
+  height: fit-content;
+}
+
+.img-conteiner {
+  text-align: center;
+}
+
+.img-conteiner img {
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .articulos {
+    background-color: rgb(17, 108, 52);
+  }
+}
