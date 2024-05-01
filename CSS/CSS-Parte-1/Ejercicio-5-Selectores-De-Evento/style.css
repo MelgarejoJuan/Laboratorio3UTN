@@ -28,6 +28,7 @@
   height: 2em;
   text-align: center;
   align-content: center;
+  text-decoration: none;
 }
 
 .options:hover {
