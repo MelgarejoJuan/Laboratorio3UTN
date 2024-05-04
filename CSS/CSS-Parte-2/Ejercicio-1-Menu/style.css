@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+main,
+hmtl {
+  width: 100%;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu ul {
+  list-style: none;
+  width: 100%;
+}
+.menu ul li {
+  background-color: rgb(35, 128, 130);
+  position: relative;
+  float: left;
+  justify-content: space-between;
+  width: 20%;
+}
+.menu ul a {
+  display: block;
+  text-decoration: none;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.menu ul ul li {
+  float: none;
+  width: 8em;
+}
+
+.menu ul ul a {
+  padding: 0.5em;
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul li:hover {
+  background-color: aquamarine;
+}
