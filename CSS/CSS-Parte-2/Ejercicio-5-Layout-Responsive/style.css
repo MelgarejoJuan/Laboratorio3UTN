@@ -54,6 +54,7 @@ nav ul {
   align-items: center;
   flex-flow: row;
 }
+
 nav ul li a {
   display: block;
   color: #000;
@@ -111,4 +112,10 @@ footer {
   color: aliceblue;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    flex-flow: column;
+  }
 }
