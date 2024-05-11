@@ -1,0 +1,125 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(202, 33, 33);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 10vh;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+}
+
+.cont-menu {
+  width: 15vw;
+  position: fixed;
+  background-color: #77a4e8;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+.side nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+nav h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav,
+ul {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: #fff;
+  width: 90%;
+}
+
+nav ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul li a:hover {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background-color: #34889b;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contenido {
+  margin-left: 15vw;
+  padding: 2em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(202, 33, 33);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .cont-menu {
+    width: 30vw;
+  }
+  .contenido {
+    margin-left: 30vw;
+  }
+}
