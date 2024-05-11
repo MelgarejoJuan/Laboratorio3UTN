@@ -13,10 +13,12 @@ html {
 body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   height: 10vh;
@@ -27,14 +29,15 @@ header {
 }
 
 main {
-  position: relative;
+  margin-top: 10vh;
   width: 100%;
   height: 80vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   display: flex;
   width: 100%;
   height: 10vh;
@@ -44,74 +47,71 @@ footer {
   align-items: center;
 }
 
-main table {
-  height: 100%;
+table,
+tr td {
+  border: 2px solid rgb(128, 128, 128);
+}
+tbody {
+  display: block;
+  height: 90%;
+  overflow: auto;
+}
+thead,
+tbody tr {
+  display: table;
   width: 100%;
+  table-layout: fixed;
+}
+thead {
+  width: calc(100% - 1em);
+  height: 10%;
+  background-color: cadetblue;
+}
+table {
+  width: 100%;
+  height: 100%;
   border-collapse: collapse;
 }
 
-main table thead {
-  height: 10%;
-  width: 100%;
+th {
+  height: 100%;
+  border: 2px solid black;
 }
-
-main table thead tr {
-  height: 70px;
-  background-color: cadetblue;
-}
-
-table thead tr th {
-  width: 12.5%;
-  border: 2px solid rgb(0, 0, 0);
-}
-
-table tbody tr {
+td {
   height: 35px;
 }
 
-table tbody tr td {
-  width: 12.5%;
-  border: 2px solid rgb(146, 146, 146);
-}
-/*
 [campo-dato="nombre"] {
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="tipo"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="generacion"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 9%;
 }
 
 [campo-dato="eficacia"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="debilidad"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="estandar"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="vulnerable"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
+  width: 13%;
 }
 
 [campo-dato="inmune"] {
-  width: 12.5%;
-  border: 2px solid rgb(107, 107, 107);
-}*/
+  width: 13%;
+}
 
 tbody tr:nth-child(odd) {
   background-color: #f6f8fb;
