@@ -1,0 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(202, 33, 33);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(202, 33, 33);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+main table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main table thead {
+  height: 10%;
+  width: 100%;
+}
+
+main table thead tr {
+  height: 70px;
+  background-color: cadetblue;
+}
+
+table thead tr th {
+  width: 12.5%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+table tbody tr {
+  height: 35px;
+}
+
+table tbody tr td {
+  width: 12.5%;
+  border: 2px solid rgb(146, 146, 146);
+}
+/*
+[campo-dato="nombre"] {
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="tipo"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="generacion"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="eficacia"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="debilidad"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="estandar"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="vulnerable"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}
+
+[campo-dato="inmune"] {
+  width: 12.5%;
+  border: 2px solid rgb(107, 107, 107);
+}*/
+
+tbody tr:nth-child(odd) {
+  background-color: #f6f8fb;
+}
+tbody tr:nth-child(even) {
+  background-color: #9fa8b6;
+}
+
+@media (max-width: 900px) {
+  [campo-dato="inmune"] {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  [campo-dato="vulnerable"] {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  [campo-dato="estandar"] {
+    display: none;
+  }
+}

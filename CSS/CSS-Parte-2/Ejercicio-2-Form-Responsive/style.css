@@ -111,3 +111,15 @@ form {
   color: #fff;
   font-size: 1em;
 }
+
+@media (min-width: 900px) {
+  .field {
+    width: 20%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .field {
+    width: 25%;
+  }
+}
