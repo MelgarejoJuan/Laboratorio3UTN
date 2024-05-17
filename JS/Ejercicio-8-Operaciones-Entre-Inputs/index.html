@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Ejercicios JavaScript</title>
+  <title>Ejercicio 8 - Operaciones entre Inputs</title>
   <meta charset="UTF-8" />
 </head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main-conteiner{
+
+        width: 100%;
+        height: fit-content;
+        background-color: aqua;
+    }
+
+</style>
 
 <html>
 
     <body>
         
+        <h2>Introducir valores en los cuadros de texto y seleccionar la operacion deseada</h2>
+
+        <div class="main-conteiner">
+
+        <label for="entrada1">Entrada 1</label>
+        <br>
+        <input type="text" id="entrada1">
+        <br>
+        <br>
+
+        <label for="entrada2">Entrada 2</label>
+        <br>
+        <input type="text" id="entrada2">
+        <br>
+        <br>
+
+        <label for="entrada3">Entrada 3</label>
+        <br>
+        <input type="text" id="entrada3">
+        <br>
+        <br>
+
+        <label for="result">Resultado</label>
+        <br>
+        <input type="text" id="result">
+        <br>
+
+        </div>
+
+        <br>
+        <button id="suma">Suma</button>
+        <button id="prom">Promedio</button>
+        <button id="mayor">Mayor</button>
 
         <script src="ejercicio8.js"></script>
 
