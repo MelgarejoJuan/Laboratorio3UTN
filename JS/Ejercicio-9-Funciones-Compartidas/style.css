@@ -86,3 +86,9 @@ body {
   border: 2px solid black;
   border-radius: 1em;
 }
+
+.cont-operaciones button:hover {
+  cursor: pointer;
+  background-color: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
+}

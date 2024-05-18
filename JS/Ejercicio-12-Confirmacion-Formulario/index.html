@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ejercicio 9 - Funciones Compartidas</title>
+  <meta charset="UTF-8" />
+</head>
+
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-form{
+
+    width: 80%;
+    height: 10em;
+    background-color: aqua;
+
+}
+
+.cont-botones{
+
+    width: 80%;
+    height: 5em;
+    background-color: rgb(150, 152, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.cont-botones button{
+  width: 25%;
+  height: 3em;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+
+</style>
+
+<html>
+
+    <body>
+        
+        <div class="cont-form">
+
+            <h1>Confirmacion de envio y reset de formulario</h1>
+
+            <form id="form">
+
+                <label for="name">Nombre</label>
+                <br>
+                <input type="text" name="name" autofocus="autofocus">
+                <br>
+                <label for="ape">Apellido</label>
+                <br>
+                <input type="text" name="ape">
+
+
+            </form>
+
+        </div>
+
+        <div class="cont-botones">
+
+            <button id="enviar">Enviar</button>
+            <button id="reset">Reestablecer</button>
+
+        </div>
+
+        <script src="ejercicio12.js"></script>
+
+    </body>
+
+</html>
