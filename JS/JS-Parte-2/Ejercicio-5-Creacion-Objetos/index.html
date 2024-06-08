@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ejercicio 5 - Creacion de Objetos</title>
+  <meta charset="UTF-8" />
+
+  <style>
+
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    button{
+        margin-left: 1em;
+        width: 5em;
+        height: 2em;
+    }
+
+    .conteiner{
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        background-color: rgb(122, 178, 224);
+    }
+
+    .clase-objeto-dinamico{
+        position: relative;
+        width: 40%;
+        height: 5em;
+        background-color: antiquewhite;
+        border: solid black 2px;
+        border-radius: 2px;
+        margin-top: 1em;
+    }
+
+  </style>
+
+</head>
+
+<html>
+
+    <body>
+
+        <button id="crear">Crear</button>
+        <button id="borrar">Limpiar</button>
+        <button id="info">Info</button>
+
+        <div class="conteiner" id="conteiner"></div>
+
+        <script src="ejercicio5.js"></script>
+
+    </body>
+
+</html>

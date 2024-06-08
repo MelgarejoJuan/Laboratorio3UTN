@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ejercicio 2 - Validacion KeyUp</title>
+  <meta charset="UTF-8" />
+
+  <style>
+
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    html, body{
+        width: 100%;
+    }
+
+    .centrado{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-conteiner{
+
+        background-color: rgb(35, 128, 130);
+        width: 50%;
+        height: fit-content;
+        margin: 1em;
+        padding: 1em;
+        color: azure;
+    
+    }
+
+    .botones{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+    }
+
+    #envio, #reset{
+        width: 30%;
+        height: 2em;
+    }
+
+  </style>
+
+</head>
+
+<html>
+
+    <body>
+
+        <h1>Validacion con KeyUp</h1>
+        
+        <div class="centrado">
+
+        <form class="main-conteiner" id="form">
+
+            <label for="dia">Ingrese dia del mes:</label>
+            <br>
+            <input type="number" id="input1" name="dia" max="31" required>
+            <br>
+            <br>
+            <label for="mes">Ingrese el mes del año:</label>
+            <br>
+            <input type="number" name="mes" id="input2" max="12" required>
+            
+            <div class="botones">
+
+                <button id="envio" type="submit">Enviar</button>
+                <button id="reset" type="reset">Reset</button>
+
+        </form>
+
+        </div>
+
+        </div>
+
+        <script src="ejercicio2.js"></script>
+
+    </body>
+
+</html>
