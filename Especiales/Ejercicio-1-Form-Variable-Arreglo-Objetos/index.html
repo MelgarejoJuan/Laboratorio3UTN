@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ejercicio 1 - Formulario Variable con Arreglo de Objetos</title>
+  <meta charset="UTF-8" />
+  <script src="../jquery-3.7.1.js"></script>  
+  <script src="ejercicio1.js"></script>
+
+
+  <style>
+
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(35, 128, 130);
+        color: azure;
+        text-align: center;
+        align-content: center;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(35, 128, 130);
+        color: azure;
+        font-size: large;
+        padding: 1em;
+    }
+
+    main{
+        width: 100%;
+        background-color: rgb(224, 236, 216);
+        height: 80vh;
+    }
+
+    form{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-flow: wrap;
+        padding: 2em;
+    }
+
+    .cont{
+        width: 50%;
+        height: 30%;
+        font-size: x-large;
+    }
+
+    .cont input{
+        width: 70%;
+        height: 2em;
+        font-size: x-large;
+    }
+
+    #tipo{
+        width: 70%;
+        height: 2em;
+        font-size: x-large;
+    }
+
+    form button{
+
+        width: 80%;
+        height: 2em;
+        font-size: x-large;
+    }
+
+  </style>
+
+</head>
+
+<html>
+
+    <body>
+
+        <header>
+
+            <h1>Formulario para Alta - Repuestos</h1>
+
+        </header>
+
+        <main>
+
+            <form action="../../HTML/Ejercicio-3/respuestaForm.html" method="get">
+
+                <div class="cont">
+                <label for="codigo">Codigo de Articulo:</label>
+                <br>
+                <br>
+                <input type="text" name="codigo" id="cod" required>
+                </div>
+
+                <div class="cont">
+                <label for="descripcion">Descripcion:</label>
+                <br>
+                <br>
+                <input type="text" name="descripcion" id="desc" required>
+                </div>
+
+                <div class="cont">
+                <label for="stock">Stock:</label>
+                <br>
+                <br>
+                <input type="number" name="stock" id="stock" required>
+                </div>
+
+                <div class="cont">
+                <label for="pieza">Tipo de Repuesto</label>
+                <br>
+                <br>
+                <select name="pieza" id="tipo" required></select>
+                </div>
+
+                <div class="cont">
+                <label for="fecha">Fecha de Alta</label>
+                <br>
+                <br>
+                <input type="date" name="fecha" id="fecha" required>
+                </div>
+
+                <div class="cont">
+                <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <footer>
+
+            <h1>Pie Del Formulario</h1>
+
+        </footer>
+
+    </body>
+
+</html>
