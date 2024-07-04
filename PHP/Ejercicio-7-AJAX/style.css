@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(197, 197, 197);
+}
+
+body h1 {
+  padding-bottom: 2em;
+}
+
+#main-cont {
+  width: 90%;
+  height: 70vh;
+  background-color: rgb(35, 128, 130);
+  display: flex;
+  flex-flow: wrap;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#cont-entrada {
+  width: 35%;
+  height: 50%;
+  background-color: rgb(126, 205, 179);
+  border-top-left-radius: 15px;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+#cont-encriptar {
+  width: 30%;
+  height: 50%;
+  background-color: rgb(134, 143, 128);
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+#cont-encriptar button {
+  height: 3em;
+  width: 50%;
+  background-color: azure;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: rgb(35, 128, 130);
+  font-size: larger;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-left: 6em;
+}
+
+#cont-encriptar button:hover {
+  background-color: rgb(35, 128, 130);
+  color: azure;
+}
+
+.cont-resultado {
+  width: 35%;
+  height: 50%;
+  background-color: rgb(126, 205, 179);
+  border-top-right-radius: 15px;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+#cont-estado {
+  width: 35%;
+  height: 50%;
+  background-color: azure;
+  border-bottom-left-radius: 15px;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+.style-recibiendo {
+  background-color: rgb(126, 205, 179);
+  width: 35%;
+  height: 50%;
+  border-top-right-radius: 15px;
+  padding-top: 4em;
+  padding-left: 1em;
+  font-size: small;
+  font-style: italic;
+}
