@@ -24,6 +24,7 @@ function cargaTabla() {
 
         var celda1 = document.createElement("td");
         celda1.innerHTML = argvalor.numSerie;
+        celda1.setAttribute("value", argvalor.numSerie);
         fila.append(celda1);
 
         var celda2 = document.createElement("td");
@@ -56,22 +57,60 @@ function cargaTabla() {
         fila.append(celda8);
 
         var celda9 = document.createElement("td");
+        celda9.setAttribute("class", "baja");
         celda9.innerHTML = "<button id='btn-baja'>Baja</button>";
         fila.append(celda9);
 
         $("#tabla").append(fila);
       });
+
+      //FUNCION PARA MODIFICAR
+
       $(".modi").click(function () {
         $("#modal-modif").attr("class", "div-activo");
         $("#fondo").attr("class", "fondo-apagado");
         cargaSelectFormModi();
-        function traerDatosComp(numSerie) {}
+
+        $("#submit-modif").click(function () {
+          $("#modal-modif").attr("class", "apagado");
+          $("#fondo").attr("class", "fondo-encendido");
+          $.ajax({
+            type: "POST",
+            url: "./modi.php",
+            data: {
+              numSerie: $("#numSerie-modi").val(),
+              detalle: $("#detalle-modi").val(),
+              costoComp: $("#costoComp-modi").val(),
+              costoManoObra: $("#costoManoObra-modi").val(),
+              fechaAlta: $("#fechaAlta-modi").val(),
+              codMarca: $("#codMarca-modi").val(),
+              //pdf: $("#pdf"),
+            },
+            success: function (respuestaDelServer) {
+              alert(respuestaDelServer);
+            },
+          });
+        });
 
         $(".salir").click(function () {
           $("#modal-modif").attr("class", "apagado");
           $("#modal-result").attr("class", "apagado");
           $("#fondo").attr("class", "fondo-encendido");
         });
+      });
+
+      $(".baja").click(function () {
+        if (confirm("Esta seguro que quiere dar de baja este componente?")) {
+          var numSerie = $(this).closest("tr").find("td:first").attr("value");
+          $.ajax({
+            type: "get",
+            url: "./baja.php",
+            data: { numSerie: numSerie },
+            success: function (respuestaDelServer) {
+              alert(respuestaDelServer);
+            },
+          });
+        }
       });
     },
   });
@@ -120,7 +159,7 @@ function cargaSelectFormModi() {
     success: function (respuesta, estado) {
       var jsonRespuesta = JSON.parse(respuesta);
       jsonRespuesta.marca.forEach(function (marca) {
-        let desplegable = $("#codMarca-modif");
+        let desplegable = $("#codMarca-modi");
         var option = document.createElement("option");
         option.setAttribute("value", marca.codmarca);
         option.innerHTML = marca.codmarca;
@@ -147,11 +186,11 @@ function formAlta() {
         data: {
           numSerie: $("#numSerie").val(),
           detalle: $("#detalle").val(),
-          costComp: $("#costComp").val(),
+          costoComp: $("#costoComp").val(),
           costoManoObra: $("#costoManoObra").val(),
           fechaAlta: $("#fechaAlta").val(),
           codMarca: $("#codMarca-alta").val(),
-          pdf: $("#pdf"),
+          //pdf: $("#pdf"),
         },
         success: function (respuestaDelServer) {
           alert(respuestaDelServer);
@@ -177,22 +216,6 @@ function limpiaFiltro() {
     $("#filtro_mano_obra").val("");
     $("#filtro_fecha").val("");
     $("#filtro_marca").val("");
-  });
-}
-
-//FUNCION PARA VENTANA MODIF
-
-function modificar() {
-  $(".modi").click(function () {
-    alert("hola");
-    $("#modal-modif").attr("class", "div-activo");
-    $("#fondo").attr("class", "fondo-apagado");
-
-    $(".salir").click(function () {
-      $("#modal-modif").attr("class", "apagado");
-      $("#modal-result").attr("class", "apagado");
-      $("#fondo").attr("class", "fondo-encendido");
-    });
   });
 }
 
