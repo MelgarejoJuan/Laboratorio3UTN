@@ -1,3 +1,6 @@
+<?php
+include ('../controlador-sesion.php')
+?>
 <!DOCTYPE html>
 
 <head>

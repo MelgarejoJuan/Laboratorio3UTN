@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Inicio de sesión</title>
+<meta charset="UTF-8" />
+<style>
+
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+#cont {
+	position: fixed;
+	left: 40%;
+	top: 20%;
+	width: 30%;
+	height: 60%;
+	padding:1em;
+	display: flex;
+	align-items: center;
+}
+
+#formIngreso {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	background-color: rgb(35, 128, 130);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	padding:1em;
+	}
+
+#formIngreso input {
+	font-size:20px;
+	width:80%;
+	height:10%;
+	margin:1em;
+}
+
+#botonEnvio {
+	width:30%;
+	margin:auto;
+	cursor:pointer;
+	}
+</style>
+
+<script src="../jquery-3.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#idLogin").focus();
+});
+
+</script>
+</head>
+
+<body>
+<div id="cont">
+
+
+<form id='formIngreso' action='./ingresoAlSistema.php' method='post'>
+		<h1>Inicio de sesión</h1>
+		<br />
+		<br />
+		<label >Usuario:  </label>
+		<br />
+		<input type='text' id='idLogin' name='login' placeholder="admin"><br>
+
+		<label>Password: </label>
+		<br />
+		<input type='password' name='clave' placeholder="admin"><br><br>
+		<input id="botonEnvio"  type='submit' value='Ingresar' /> 
+</form>
+
+</div>
+
+</body>
+</html>
